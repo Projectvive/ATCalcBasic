@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.android.support:support-annotations:26.1.0@jar">
+    <CLASSES>
+      <root url="jar://E:/maven_repo/com/android/support/support-annotations/26.1.0/support-annotations-26.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/maven_repo/com/android/support/support-annotations/26.1.0/support-annotations-26.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/maven_repo/com/android/support/support-annotations/26.1.0/support-annotations-26.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
