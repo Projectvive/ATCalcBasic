@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimpleCalculator</string>
+    <string name="app_name">AT Calc Basic</string>
     <string name="num_zero">0</string>
     <string name="num_one">1</string>
     <string name="num_two">2</string>

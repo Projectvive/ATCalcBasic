@@ -1,4 +1,4 @@
-package com.example.james.simplecalculator;
+package com.projectvive.atcalcbasic;
 
 import android.speech.tts.TextToSpeech;
 import android.support.v4.widget.TextViewCompat;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -144,11 +145,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
             }
             tempResult = result;
+
             clearAll();
-            operand1String = String.valueOf(tempResult);
+            if (tempResult % 1 == 0) {
+                operand1String = String.valueOf((int)tempResult);
+
+            } else {
+                double temp = tempResult - (int)tempResult;
+                if (String.valueOf(temp).length() < 8) {
+                    operand1String = String.valueOf(tempResult);
+                } else {
+                    operand1String = String.valueOf((int)tempResult) + String.valueOf(temp).substring(1, 7);
+                }
+            }
+
             waitingForOperand = true;
             updateDisplay();
-            speakOut("Equals " + String.valueOf(tempResult));
+            speakOut("Equals " + operand1String);
         } else {
             return false;
         }
