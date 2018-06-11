@@ -10,3 +10,5 @@ Features Include:
 * Compatible with switch access
 * Speaks Numbers, Operators, and Answers
 * No Ads
+
+You can download the app on Google Play here: https://play.google.com/store/apps/details?id=com.projectvive.atcalcbasic
